@@ -13,13 +13,13 @@ How can we minimize risks when starting our aviation operations?
 Which aircraft should we prioritize for purchase and operation?
 
 **Data Understanding and Analysis**
+
 Data Source: National Transportation Safety Board (NTSB) Aviation Accident Database
 Time Period: 1962-2023
 Total Records: 77,488 analyzed accidents after data cleaning
 Key Variables: Aircraft category, manufacturer, flight phase, injury severity, weather conditions
 
 Data Description: The dataset includes comprehensive information about civil aviation accidents in the United States and international waters, covering aircraft specifications, accident circumstances, and injury outcomes.
-
 
 Based on our analysis of 77,488 aviation accidents, we recommend:
 
