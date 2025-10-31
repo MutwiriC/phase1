@@ -1,0 +1,1594 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0912.2314                               -->
+<workbook original-version='18.1' source-build='2025.2.3 (20252.25.0912.2314)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='aviation_safety_clean (76603600)' inline='true' name='federated.02do3of12rgry01anspmz1ibc8gd' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='76603600' name='excel-direct.0k0xjwx0hftfox1bp2qyh1g03azg'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/kagzt/Documents/projects/phase1/76603600.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0k0xjwx0hftfox1bp2qyh1g03azg' name='aviation_safety_clean' table='[aviation_safety_clean$]' type='table'>
+          <columns gridOrigin='A1:T10001:no:A1:T10001:0' header='yes' outcome='2'>
+            <column datatype='string' name='Event.Id' ordinal='0' />
+            <column datatype='date' name='Event.Date' ordinal='1' />
+            <column datatype='integer' name='Event.Year' ordinal='2' />
+            <column datatype='string' name='Make' ordinal='3' />
+            <column datatype='string' name='Model' ordinal='4' />
+            <column datatype='string' name='Aircraft.Category' ordinal='5' />
+            <column datatype='string' name='Injury.Level' ordinal='6' />
+            <column datatype='integer' name='Total.Fatal.Injuries' ordinal='7' />
+            <column datatype='integer' name='Total.Serious.Injuries' ordinal='8' />
+            <column datatype='integer' name='Total.Minor.Injuries' ordinal='9' />
+            <column datatype='integer' name='Total.Uninjured' ordinal='10' />
+            <column datatype='integer' name='Total.Injuries' ordinal='11' />
+            <column datatype='real' name='Survival.Rate' ordinal='12' />
+            <column datatype='real' name='Fatality.Rate' ordinal='13' />
+            <column datatype='string' name='Aircraft.damage' ordinal='14' />
+            <column datatype='string' name='Broad.phase.of.flight' ordinal='15' />
+            <column datatype='string' name='Weather_Condition' ordinal='16' />
+            <column datatype='string' name='Purpose.of.flight' ordinal='17' />
+            <column datatype='integer' name='Number.of.Engines' ordinal='18' />
+            <column datatype='string' name='Engine.Type' ordinal='19' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[aviation_safety_clean]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:T10001:no:A1:T10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Event.Id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Event.Id]</local-name>
+            <parent-name>[aviation_safety_clean]</parent-name>
+            <remote-alias>Event.Id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RKE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Event.Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Event.Date]</local-name>
+            <parent-name>[aviation_safety_clean]</parent-name>
+            <remote-alias>Event.Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Event.Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Event.Year]</local-name>
+            <parent-name>[aviation_safety_clean]</parent-name>
+            <remote-alias>Event.Year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Make</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Make]</local-name>
+            <parent-name>[aviation_safety_clean]</parent-name>
+            <remote-alias>Make</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RKE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Model</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Model]</local-name>
+            <parent-name>[aviation_safety_clean]</parent-name>
+            <remote-alias>Model</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RKE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aircraft.Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Aircraft.Category]</local-name>
+            <parent-name>[aviation_safety_clean]</parent-name>
+            <remote-alias>Aircraft.Category</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RKE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Injury.Level</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Injury.Level]</local-name>
+            <parent-name>[aviation_safety_clean]</parent-name>
+            <remote-alias>Injury.Level</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RKE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total.Fatal.Injuries</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total.Fatal.Injuries]</local-name>
+            <parent-name>[aviation_safety_clean]</parent-name>
+            <remote-alias>Total.Fatal.Injuries</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total.Serious.Injuries</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total.Serious.Injuries]</local-name>
+            <parent-name>[aviation_safety_clean]</parent-name>
+            <remote-alias>Total.Serious.Injuries</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total.Minor.Injuries</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total.Minor.Injuries]</local-name>
+            <parent-name>[aviation_safety_clean]</parent-name>
+            <remote-alias>Total.Minor.Injuries</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total.Uninjured</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total.Uninjured]</local-name>
+            <parent-name>[aviation_safety_clean]</parent-name>
+            <remote-alias>Total.Uninjured</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total.Injuries</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total.Injuries]</local-name>
+            <parent-name>[aviation_safety_clean]</parent-name>
+            <remote-alias>Total.Injuries</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Survival.Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Survival.Rate]</local-name>
+            <parent-name>[aviation_safety_clean]</parent-name>
+            <remote-alias>Survival.Rate</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fatality.Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Fatality.Rate]</local-name>
+            <parent-name>[aviation_safety_clean]</parent-name>
+            <remote-alias>Fatality.Rate</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aircraft.damage</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Aircraft.damage]</local-name>
+            <parent-name>[aviation_safety_clean]</parent-name>
+            <remote-alias>Aircraft.damage</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RKE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Broad.phase.of.flight</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Broad.phase.of.flight]</local-name>
+            <parent-name>[aviation_safety_clean]</parent-name>
+            <remote-alias>Broad.phase.of.flight</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RKE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weather_Condition</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Weather_Condition]</local-name>
+            <parent-name>[aviation_safety_clean]</parent-name>
+            <remote-alias>Weather_Condition</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RKE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Purpose.of.flight</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Purpose.of.flight]</local-name>
+            <parent-name>[aviation_safety_clean]</parent-name>
+            <remote-alias>Purpose.of.flight</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RKE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number.of.Engines</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number.of.Engines]</local-name>
+            <parent-name>[aviation_safety_clean]</parent-name>
+            <remote-alias>Number.of.Engines</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engine.Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Engine.Type]</local-name>
+            <parent-name>[aviation_safety_clean]</parent-name>
+            <remote-alias>Engine.Type</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RKE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.02do3of12rgry01anspmz1ibc8gd].[avg:Fatality.Rate:qk]&quot;' value='Avg. Fatality Rate' />
+          <alias key='&quot;[federated.02do3of12rgry01anspmz1ibc8gd].[avg:Survival.Rate:qk]&quot;' value='Avg. Survival Rate' />
+          <alias key='&quot;[federated.02do3of12rgry01anspmz1ibc8gd].[cnt:Event.Id:qk]&quot;' value='# Accidents' />
+          <alias key='&quot;[federated.02do3of12rgry01anspmz1ibc8gd].[sum:Total.Injuries:qk]&quot;' value='Total Injuries' />
+          <alias key='&quot;[federated.02do3of12rgry01anspmz1ibc8gd].[sum:Total.Uninjured:qk]&quot;' value='Total Uninjured' />
+        </aliases>
+      </column>
+      <column datatype='string' name='[Aircraft.Category]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Event.Id]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Event.Year]' role='dimension' type='quantitative' />
+      <column datatype='real' name='[Fatality.Rate]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Survival.Rate]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Total.Injuries]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Total.Uninjured]' role='measure' type='quantitative' />
+      <column caption='Weather Condition' datatype='string' name='[Weather_Condition]' role='dimension' type='nominal' />
+      <column caption='aviation_safety_clean' datatype='table' name='[__tableau_internal_object_id__].[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]' role='measure' type='quantitative' />
+      <column-instance column='[Event.Year]' derivation='Attribute' name='[attr:Event.Year:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Fatality.Rate]' derivation='Avg' name='[avg:Fatality.Rate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Survival.Rate]' derivation='Avg' name='[avg:Survival.Rate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Event.Id]' derivation='Count' name='[cnt:Event.Id:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Fatality.Rate]' derivation='CountD' name='[ctd:Fatality.Rate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Fatality.Rate]' derivation='Median' name='[med:Fatality.Rate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Survival.Rate]' derivation='Median' name='[med:Survival.Rate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Aircraft.Category]' derivation='None' name='[none:Aircraft.Category:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Fatality.Rate]' derivation='Sum' name='[sum:Fatality.Rate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Survival.Rate]' derivation='Sum' name='[sum:Survival.Rate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total.Injuries]' derivation='Sum' name='[sum:Total.Injuries:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total.Uninjured]' derivation='Sum' name='[sum:Total.Uninjured:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/kagzt/AppData/Local/Temp/TableauTemp/#TableauTemp_1ul5rcs1jl86f21eloxvf15ykaar.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/31/2025 10:22:06 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Event.Id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Event.Id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Event.Id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>aviation_safety_clean</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>37534</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Event.Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Event.Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Event.Date</remote-alias>
+              <ordinal>1</ordinal>
+              <family>aviation_safety_clean</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>22969</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Event.Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Event.Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Event.Year</remote-alias>
+              <ordinal>2</ordinal>
+              <family>aviation_safety_clean</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Make</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Make]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Make</remote-alias>
+              <ordinal>3</ordinal>
+              <family>aviation_safety_clean</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1839</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Model</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Model]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Model</remote-alias>
+              <ordinal>4</ordinal>
+              <family>aviation_safety_clean</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5501</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Aircraft.Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Aircraft.Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Aircraft.Category</remote-alias>
+              <ordinal>5</ordinal>
+              <family>aviation_safety_clean</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Injury.Level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Injury.Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Injury.Level</remote-alias>
+              <ordinal>6</ordinal>
+              <family>aviation_safety_clean</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total.Fatal.Injuries</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total.Fatal.Injuries]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total.Fatal.Injuries</remote-alias>
+              <ordinal>7</ordinal>
+              <family>aviation_safety_clean</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>54</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total.Serious.Injuries</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total.Serious.Injuries]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total.Serious.Injuries</remote-alias>
+              <ordinal>8</ordinal>
+              <family>aviation_safety_clean</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total.Minor.Injuries</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total.Minor.Injuries]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total.Minor.Injuries</remote-alias>
+              <ordinal>9</ordinal>
+              <family>aviation_safety_clean</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total.Uninjured</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total.Uninjured]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total.Uninjured</remote-alias>
+              <ordinal>10</ordinal>
+              <family>aviation_safety_clean</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>679</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total.Injuries</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total.Injuries]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total.Injuries</remote-alias>
+              <ordinal>11</ordinal>
+              <family>aviation_safety_clean</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>54</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Survival.Rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Survival.Rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Survival.Rate</remote-alias>
+              <ordinal>12</ordinal>
+              <family>aviation_safety_clean</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>112</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fatality.Rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Fatality.Rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fatality.Rate</remote-alias>
+              <ordinal>13</ordinal>
+              <family>aviation_safety_clean</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>73</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Aircraft.damage</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Aircraft.damage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Aircraft.damage</remote-alias>
+              <ordinal>14</ordinal>
+              <family>aviation_safety_clean</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Broad.phase.of.flight</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Broad.phase.of.flight]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Broad.phase.of.flight</remote-alias>
+              <ordinal>15</ordinal>
+              <family>aviation_safety_clean</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Weather_Condition</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Weather_Condition]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Weather_Condition</remote-alias>
+              <ordinal>16</ordinal>
+              <family>aviation_safety_clean</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Purpose.of.flight</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Purpose.of.flight]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Purpose.of.flight</remote-alias>
+              <ordinal>17</ordinal>
+              <family>aviation_safety_clean</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>43</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number.of.Engines</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Number.of.Engines]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number.of.Engines</remote-alias>
+              <ordinal>18</ordinal>
+              <family>aviation_safety_clean</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Engine.Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Engine.Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Engine.Type</remote-alias>
+              <ordinal>19</ordinal>
+              <family>aviation_safety_clean</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[aviation!safety!clean_5219847E33F5428186D579C93F25DD22]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.02do3of12rgry01anspmz1ibc8gd].[avg:Fatality.Rate:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.02do3of12rgry01anspmz1ibc8gd].[ctd:Fatality.Rate:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.02do3of12rgry01anspmz1ibc8gd].[med:Fatality.Rate:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.02do3of12rgry01anspmz1ibc8gd].[sum:Fatality.Rate:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.02do3of12rgry01anspmz1ibc8gd].[avg:Survival.Rate:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.02do3of12rgry01anspmz1ibc8gd].[cnt:Event.Id:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.02do3of12rgry01anspmz1ibc8gd].[med:Survival.Rate:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.02do3of12rgry01anspmz1ibc8gd].[sum:Survival.Rate:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.02do3of12rgry01anspmz1ibc8gd].[sum:Total.Injuries:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.02do3of12rgry01anspmz1ibc8gd]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.02do3of12rgry01anspmz1ibc8gd].[attr:Event.Year:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Aircraft.Category:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Rocket&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Airplane&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Gyrocraft&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Weight-Shift&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;ULTR&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Helicopter&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Balloon&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Powered Parachute&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;WSFT&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Ultralight&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Powered-Lift&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Blimp&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Unknown Category&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Glider&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Kenya&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='aviation_safety_clean' id='aviation!safety!clean_5219847E33F5428186D579C93F25DD22'>
+            <properties context=''>
+              <relation connection='excel-direct.0k0xjwx0hftfox1bp2qyh1g03azg' name='aviation_safety_clean' table='[aviation_safety_clean$]' type='table'>
+                <columns gridOrigin='A1:T10001:no:A1:T10001:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Event.Id' ordinal='0' />
+                  <column datatype='date' name='Event.Date' ordinal='1' />
+                  <column datatype='integer' name='Event.Year' ordinal='2' />
+                  <column datatype='string' name='Make' ordinal='3' />
+                  <column datatype='string' name='Model' ordinal='4' />
+                  <column datatype='string' name='Aircraft.Category' ordinal='5' />
+                  <column datatype='string' name='Injury.Level' ordinal='6' />
+                  <column datatype='integer' name='Total.Fatal.Injuries' ordinal='7' />
+                  <column datatype='integer' name='Total.Serious.Injuries' ordinal='8' />
+                  <column datatype='integer' name='Total.Minor.Injuries' ordinal='9' />
+                  <column datatype='integer' name='Total.Uninjured' ordinal='10' />
+                  <column datatype='integer' name='Total.Injuries' ordinal='11' />
+                  <column datatype='real' name='Survival.Rate' ordinal='12' />
+                  <column datatype='real' name='Fatality.Rate' ordinal='13' />
+                  <column datatype='string' name='Aircraft.damage' ordinal='14' />
+                  <column datatype='string' name='Broad.phase.of.flight' ordinal='15' />
+                  <column datatype='string' name='Weather_Condition' ordinal='16' />
+                  <column datatype='string' name='Purpose.of.flight' ordinal='17' />
+                  <column datatype='integer' name='Number.of.Engines' ordinal='18' />
+                  <column datatype='string' name='Engine.Type' ordinal='19' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.02do3of12rgry01anspmz1ibc8gd'>
+      <datasources>
+        <datasource caption='aviation_safety_clean (76603600)' name='federated.02do3of12rgry01anspmz1ibc8gd' />
+      </datasources>
+      <datasource-dependencies datasource='federated.02do3of12rgry01anspmz1ibc8gd'>
+        <column datatype='string' name='[Aircraft.damage]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Engine.Type]' role='dimension' type='nominal' />
+        <column datatype='integer' name='[Event.Year]' role='dimension' type='quantitative' />
+        <column datatype='string' name='[Injury.Level]' role='dimension' type='nominal' />
+        <column caption='Weather Condition' datatype='string' name='[Weather_Condition]' role='dimension' type='nominal' />
+        <column-instance column='[Aircraft.damage]' derivation='None' name='[none:Aircraft.damage:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Engine.Type]' derivation='None' name='[none:Engine.Type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Event.Year]' derivation='None' name='[none:Event.Year:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Injury.Level]' derivation='None' name='[none:Injury.Level:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Weather_Condition]' derivation='None' name='[none:Weather_Condition:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.02do3of12rgry01anspmz1ibc8gd].[none:Aircraft.damage:nk]'>
+        <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+          <groupfilter function='level-members' level='[none:Aircraft.damage:nk]' />
+          <groupfilter function='member' level='[none:Aircraft.damage:nk]' member='&quot;Unknown&quot;' />
+        </groupfilter>
+      </filter>
+      <filter class='categorical' column='[federated.02do3of12rgry01anspmz1ibc8gd].[none:Engine.Type:nk]'>
+        <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+          <groupfilter function='level-members' level='[none:Engine.Type:nk]' />
+          <groupfilter function='member' level='[none:Engine.Type:nk]' member='&quot;Unknown&quot;' />
+        </groupfilter>
+      </filter>
+      <filter class='quantitative' column='[federated.02do3of12rgry01anspmz1ibc8gd].[none:Event.Year:qk]' included-values='in-range'>
+        <min>1974</min>
+        <max>2007</max>
+      </filter>
+      <filter class='categorical' column='[federated.02do3of12rgry01anspmz1ibc8gd].[none:Injury.Level:nk]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:Injury.Level:nk]' member='&quot;Fatal&quot;' />
+          <groupfilter function='member' level='[none:Injury.Level:nk]' member='&quot;Non-Fatal&quot;' />
+        </groupfilter>
+      </filter>
+      <filter class='categorical' column='[federated.02do3of12rgry01anspmz1ibc8gd].[none:Weather_Condition:nk]'>
+        <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+          <groupfilter function='level-members' level='[none:Weather_Condition:nk]' />
+          <groupfilter function='member' level='[none:Weather_Condition:nk]' member='&quot;Unknown&quot;' />
+        </groupfilter>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Aircraft type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='aviation_safety_clean (76603600)' name='federated.02do3of12rgry01anspmz1ibc8gd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02do3of12rgry01anspmz1ibc8gd'>
+            <column datatype='string' name='[Aircraft.Category]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Aircraft.damage]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Engine.Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Event.Id]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Event.Year]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[Injury.Level]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total.Injuries]' role='measure' type='quantitative' />
+            <column caption='Weather Condition' datatype='string' name='[Weather_Condition]' role='dimension' type='nominal' />
+            <column-instance column='[Event.Id]' derivation='Count' name='[cnt:Event.Id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Aircraft.Category]' derivation='None' name='[none:Aircraft.Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Aircraft.damage]' derivation='None' name='[none:Aircraft.damage:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Engine.Type]' derivation='None' name='[none:Engine.Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Event.Year]' derivation='None' name='[none:Event.Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Injury.Level]' derivation='None' name='[none:Injury.Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Weather_Condition]' derivation='None' name='[none:Weather_Condition:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total.Injuries]' derivation='Sum' name='[sum:Total.Injuries:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.02do3of12rgry01anspmz1ibc8gd].[none:Aircraft.Category:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Aircraft.Category:nk]' />
+              <groupfilter function='member' level='[none:Aircraft.Category:nk]' member='&quot;Unknown Category&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.02do3of12rgry01anspmz1ibc8gd].[none:Aircraft.Category:nk]' direction='DESC' using='[federated.02do3of12rgry01anspmz1ibc8gd].[sum:Total.Injuries:qk]' />
+          <slices>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Injury.Level:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Weather_Condition:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Aircraft.damage:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Aircraft.Category:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Engine.Type:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Event.Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Aircraft.Category:nk]</rows>
+        <cols>[federated.02do3of12rgry01anspmz1ibc8gd].[cnt:Event.Id:qk]</cols>
+      </table>
+      <simple-id uuid='{7F5EA8B9-BFCD-4125-961A-3F3D0DCC3A19}' />
+    </worksheet>
+    <worksheet name='Engine type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='aviation_safety_clean (76603600)' name='federated.02do3of12rgry01anspmz1ibc8gd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02do3of12rgry01anspmz1ibc8gd'>
+            <column datatype='string' name='[Aircraft.damage]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Engine.Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Event.Id]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Event.Year]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[Injury.Level]' role='dimension' type='nominal' />
+            <column caption='Weather Condition' datatype='string' name='[Weather_Condition]' role='dimension' type='nominal' />
+            <column-instance column='[Event.Id]' derivation='Count' name='[cnt:Event.Id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Aircraft.damage]' derivation='None' name='[none:Aircraft.damage:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Engine.Type]' derivation='None' name='[none:Engine.Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Event.Year]' derivation='None' name='[none:Event.Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Injury.Level]' derivation='None' name='[none:Injury.Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Weather_Condition]' derivation='None' name='[none:Weather_Condition:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.02do3of12rgry01anspmz1ibc8gd].[none:Engine.Type:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.02do3of12rgry01anspmz1ibc8gd].[cnt:Event.Id:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Injury.Level:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Weather_Condition:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Aircraft.damage:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Engine.Type:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Event.Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Engine.Type:nk]</rows>
+        <cols>[federated.02do3of12rgry01anspmz1ibc8gd].[cnt:Event.Id:qk]</cols>
+      </table>
+      <simple-id uuid='{FA77F634-60BD-4192-BE6E-353CAB315516}' />
+    </worksheet>
+    <worksheet name='KPI'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='aviation_safety_clean (76603600)' name='federated.02do3of12rgry01anspmz1ibc8gd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02do3of12rgry01anspmz1ibc8gd'>
+            <column datatype='string' name='[Aircraft.damage]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Engine.Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Event.Id]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Event.Year]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[Injury.Level]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total.Injuries]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total.Uninjured]' role='measure' type='quantitative' />
+            <column caption='Weather Condition' datatype='string' name='[Weather_Condition]' role='dimension' type='nominal' />
+            <column-instance column='[Event.Id]' derivation='Count' name='[cnt:Event.Id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Aircraft.damage]' derivation='None' name='[none:Aircraft.damage:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Engine.Type]' derivation='None' name='[none:Engine.Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Event.Year]' derivation='None' name='[none:Event.Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Injury.Level]' derivation='None' name='[none:Injury.Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Weather_Condition]' derivation='None' name='[none:Weather_Condition:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total.Injuries]' derivation='Sum' name='[sum:Total.Injuries:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total.Uninjured]' derivation='Sum' name='[sum:Total.Uninjured:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.02do3of12rgry01anspmz1ibc8gd].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02do3of12rgry01anspmz1ibc8gd].[cnt:Event.Id:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02do3of12rgry01anspmz1ibc8gd].[sum:Total.Injuries:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02do3of12rgry01anspmz1ibc8gd].[sum:Total.Uninjured:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[:Measure Names]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Injury.Level:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Weather_Condition:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Aircraft.damage:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Engine.Type:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Event.Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.02do3of12rgry01anspmz1ibc8gd].[:Measure Names]' value='259' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.02do3of12rgry01anspmz1ibc8gd].[:Measure Names]' value='28' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.02do3of12rgry01anspmz1ibc8gd].[:Measure Names]' value='12' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.02do3of12rgry01anspmz1ibc8gd].[Multiple Values]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.02do3of12rgry01anspmz1ibc8gd].[Multiple Values]</run>
+                <run>&gt;</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.02do3of12rgry01anspmz1ibc8gd].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{0536B9FA-6B6F-4075-ABFB-D5DDBEC22270}' />
+    </worksheet>
+    <worksheet name='KPI (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='aviation_safety_clean (76603600)' name='federated.02do3of12rgry01anspmz1ibc8gd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02do3of12rgry01anspmz1ibc8gd'>
+            <column datatype='string' name='[Aircraft.damage]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Engine.Type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Event.Year]' role='dimension' type='quantitative' />
+            <column datatype='real' name='[Fatality.Rate]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Injury.Level]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Survival.Rate]' role='measure' type='quantitative' />
+            <column caption='Weather Condition' datatype='string' name='[Weather_Condition]' role='dimension' type='nominal' />
+            <column-instance column='[Fatality.Rate]' derivation='Avg' name='[avg:Fatality.Rate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Survival.Rate]' derivation='Avg' name='[avg:Survival.Rate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Aircraft.damage]' derivation='None' name='[none:Aircraft.damage:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Engine.Type]' derivation='None' name='[none:Engine.Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Event.Year]' derivation='None' name='[none:Event.Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Injury.Level]' derivation='None' name='[none:Injury.Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Weather_Condition]' derivation='None' name='[none:Weather_Condition:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.02do3of12rgry01anspmz1ibc8gd].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02do3of12rgry01anspmz1ibc8gd].[avg:Fatality.Rate:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02do3of12rgry01anspmz1ibc8gd].[avg:Survival.Rate:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Injury.Level:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Weather_Condition:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Aircraft.damage:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Engine.Type:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Event.Year:qk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.02do3of12rgry01anspmz1ibc8gd].[:Measure Names]' value='217' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.02do3of12rgry01anspmz1ibc8gd].[:Measure Names]' value='32' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.02do3of12rgry01anspmz1ibc8gd].[:Measure Names]' value='12' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.02do3of12rgry01anspmz1ibc8gd].[Multiple Values]' />
+              <lod column='[federated.02do3of12rgry01anspmz1ibc8gd].[avg:Survival.Rate:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.02do3of12rgry01anspmz1ibc8gd].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{0B2E375A-7B39-4913-B882-B0C614A1C8CD}' />
+    </worksheet>
+    <worksheet name='Make'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='aviation_safety_clean (76603600)' name='federated.02do3of12rgry01anspmz1ibc8gd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02do3of12rgry01anspmz1ibc8gd'>
+            <column datatype='string' name='[Aircraft.damage]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Engine.Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Event.Id]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Event.Year]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[Injury.Level]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Make]' role='dimension' type='nominal' />
+            <column caption='Weather Condition' datatype='string' name='[Weather_Condition]' role='dimension' type='nominal' />
+            <column-instance column='[Event.Id]' derivation='Count' name='[cnt:Event.Id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Aircraft.damage]' derivation='None' name='[none:Aircraft.damage:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Engine.Type]' derivation='None' name='[none:Engine.Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Event.Year]' derivation='None' name='[none:Event.Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Injury.Level]' derivation='None' name='[none:Injury.Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Make]' derivation='None' name='[none:Make:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Weather_Condition]' derivation='None' name='[none:Weather_Condition:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.02do3of12rgry01anspmz1ibc8gd].[none:Make:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.02do3of12rgry01anspmz1ibc8gd].[cnt:Event.Id:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Injury.Level:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Weather_Condition:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Aircraft.damage:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Engine.Type:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Event.Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.02do3of12rgry01anspmz1ibc8gd].[none:Make:nk]' value='208' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Make:nk]</rows>
+        <cols>[federated.02do3of12rgry01anspmz1ibc8gd].[cnt:Event.Id:qk]</cols>
+      </table>
+      <simple-id uuid='{20130C5E-0C23-482B-8DDE-CFBE85BFD525}' />
+    </worksheet>
+    <worksheet name='Sheet 9'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{55A15917-9A21-4A67-8C39-74B32F530266}' />
+    </worksheet>
+    <worksheet name='Time'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='aviation_safety_clean (76603600)' name='federated.02do3of12rgry01anspmz1ibc8gd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02do3of12rgry01anspmz1ibc8gd'>
+            <column datatype='string' name='[Aircraft.damage]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Engine.Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Event.Id]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Event.Year]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[Injury.Level]' role='dimension' type='nominal' />
+            <column caption='Weather Condition' datatype='string' name='[Weather_Condition]' role='dimension' type='nominal' />
+            <column-instance column='[Event.Id]' derivation='Count' name='[cnt:Event.Id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Aircraft.damage]' derivation='None' name='[none:Aircraft.damage:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Engine.Type]' derivation='None' name='[none:Engine.Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Event.Year]' derivation='None' name='[none:Event.Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Injury.Level]' derivation='None' name='[none:Injury.Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Weather_Condition]' derivation='None' name='[none:Weather_Condition:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Injury.Level:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Weather_Condition:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Aircraft.damage:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Engine.Type:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Event.Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.02do3of12rgry01anspmz1ibc8gd].[cnt:Event.Id:qk]</rows>
+        <cols>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Event.Year:qk]</cols>
+      </table>
+      <simple-id uuid='{8849562A-951E-447B-9E46-4D1D48DF5BC4}' />
+    </worksheet>
+    <worksheet name='Weather'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='aviation_safety_clean (76603600)' name='federated.02do3of12rgry01anspmz1ibc8gd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02do3of12rgry01anspmz1ibc8gd'>
+            <column datatype='string' name='[Aircraft.damage]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Engine.Type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Event.Year]' role='dimension' type='quantitative' />
+            <column datatype='real' name='[Fatality.Rate]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Injury.Level]' role='dimension' type='nominal' />
+            <column caption='Weather Condition' datatype='string' name='[Weather_Condition]' role='dimension' type='nominal' />
+            <column-instance column='[Fatality.Rate]' derivation='Avg' name='[avg:Fatality.Rate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Aircraft.damage]' derivation='None' name='[none:Aircraft.damage:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Engine.Type]' derivation='None' name='[none:Engine.Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Event.Year]' derivation='None' name='[none:Event.Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Injury.Level]' derivation='None' name='[none:Injury.Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Weather_Condition]' derivation='None' name='[none:Weather_Condition:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Injury.Level:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Weather_Condition:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Aircraft.damage:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Engine.Type:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Event.Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Weather_Condition:nk]</rows>
+        <cols>[federated.02do3of12rgry01anspmz1ibc8gd].[avg:Fatality.Rate:qk]</cols>
+      </table>
+      <simple-id uuid='{DAE3B35F-3475-405D-AF82-C5077F04E1FF}' />
+    </worksheet>
+    <worksheet name='flight phase'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='aviation_safety_clean (76603600)' name='federated.02do3of12rgry01anspmz1ibc8gd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02do3of12rgry01anspmz1ibc8gd'>
+            <column datatype='string' name='[Aircraft.damage]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Broad.phase.of.flight]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Engine.Type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Event.Year]' role='dimension' type='quantitative' />
+            <column datatype='real' name='[Fatality.Rate]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Injury.Level]' role='dimension' type='nominal' />
+            <column caption='Weather Condition' datatype='string' name='[Weather_Condition]' role='dimension' type='nominal' />
+            <column-instance column='[Fatality.Rate]' derivation='Avg' name='[avg:Fatality.Rate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Aircraft.damage]' derivation='None' name='[none:Aircraft.damage:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Broad.phase.of.flight]' derivation='None' name='[none:Broad.phase.of.flight:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Engine.Type]' derivation='None' name='[none:Engine.Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Event.Year]' derivation='None' name='[none:Event.Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Injury.Level]' derivation='None' name='[none:Injury.Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Weather_Condition]' derivation='None' name='[none:Weather_Condition:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.02do3of12rgry01anspmz1ibc8gd].[none:Broad.phase.of.flight:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Broad.phase.of.flight:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Broad.phase.of.flight:nk]' member='&quot;Other&quot;' />
+                <groupfilter function='member' level='[none:Broad.phase.of.flight:nk]' member='&quot;Unknown&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.02do3of12rgry01anspmz1ibc8gd].[none:Broad.phase.of.flight:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.02do3of12rgry01anspmz1ibc8gd].[avg:Fatality.Rate:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Injury.Level:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Weather_Condition:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Aircraft.damage:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Broad.phase.of.flight:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Engine.Type:nk]</column>
+            <column>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Event.Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02do3of12rgry01anspmz1ibc8gd].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.02do3of12rgry01anspmz1ibc8gd].[none:Broad.phase.of.flight:nk]</rows>
+        <cols>[federated.02do3of12rgry01anspmz1ibc8gd].[avg:Fatality.Rate:qk]</cols>
+      </table>
+      <simple-id uuid='{ED397764-AE7D-407C-B93D-D197F85E2AC4}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='Time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C7094D29-32EB-4405-BDBE-95A14E5C9CC8}' />
+    </window>
+    <window class='worksheet' name='Make'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5D10F6D6-FF8C-45AD-9099-3A9C1414AD02}' />
+    </window>
+    <window class='worksheet' name='flight phase'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.02do3of12rgry01anspmz1ibc8gd].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BB7BB3EB-682F-42A4-B258-FE665C53FBAD}' />
+    </window>
+    <window class='worksheet' name='Weather'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D1B066E2-0CD4-4669-9983-BAEE026D6E6E}' />
+    </window>
+    <window class='worksheet' name='Aircraft type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CD085D08-E4E4-4959-9F2C-10CADAA931C8}' />
+    </window>
+    <window class='worksheet' name='Engine type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5893324C-0E3D-459B-8CDF-6E978E145CB7}' />
+    </window>
+    <window class='worksheet' name='KPI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8F4E9BBD-C0D0-457B-B587-A54AAB7DFC5E}' />
+    </window>
+    <window class='worksheet' name='KPI (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{648E1C57-F148-447E-B811-8A8FF8FE8681}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='30'>
+            <card type='columns' />
+          </strip>
+          <strip size='30'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AFD663B4-13E9-4E58-8A5A-03123C82CE35}' />
+    </window>
+  </windows>
+</workbook>
