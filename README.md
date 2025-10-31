@@ -1,4 +1,5 @@
 **Overview**
+
 This project analyzes aviation accident data from the National Transportation Safety Board (NTSB) to identify the safest aircraft and operational practices for our company's expansion into the aviation industry. Using data from 77,488 aviation accidents spanning 1962-2023, we provide data-driven recommendations for aircraft selection and safety protocols.
 
 **Business Understanding**
