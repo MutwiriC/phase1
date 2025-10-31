@@ -27,6 +27,9 @@ Based on our analysis of 77,488 aviation accidents, we recommend:
 3. **Operational Safety**: Focus pilot training on descent and other high-risk flight phases where fatality rates exceed 90%
 
 **Links:**
+
 Notebook: https://github.com/MutwiriC/phase1/blob/main/index.ipynb
+
 Presentation: https://github.com/MutwiriC/phase1/blob/main/presentation/AVIATION%20SAFETY%20ANALYSIS.pdf
+
 Dashboard: https://public.tableau.com/views/AviationSatefyDashboard/Dashboard2?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link
